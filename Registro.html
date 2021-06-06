@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registro</title>
+  <link rel="icon" type="imgagem/png" href="img/Pilula[20x20].png">
+	<link rel="stylesheet" href="css/Style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+	<link href="css/Estilo.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+	<script type="text/javascript">
+        function validateForm() {
+  var x = document.forms["myForm"]["email"].value;
+  if (x == "") {
+    alert("Campos obrigatórios");
+    document.getElementById("email").focus();
+    return false;
+  }else{
+  	alert("Registro concluido");
+     window.location.assign("Index.html");
+  }
+}
+    </script>
+</head>
+<body class="corpo">
+	<div class="head">
+ <div class="head1">
+
+ 	<p class="covid" style="top: 13px">
+ 	Devido aos problemas ocasionados pelo COVID–19 alguns produtos estão sujeitos a disponibilidade de estoque, podendo ocasionar um aumento no tempo de entrega e atendimento do SAC.</p>
+ </div>
+  	<div class="head2">
+ 		<div class="fe">
+ 			Fone: (11) 8765-4321 | Email: farmacia.demacia@gmail.com
+ 		</div>
+ 		<div class="links">
+ 		 <a href="Acesso.html" style="color: #000080">Acesso</a>
+ 		 <a href="Sobre.html">Sobre</a>
+ 		 <a href="Servico.html">Serviços</a>
+ 		 <a href="Index.html"> Página Inicial</a>
+ 		 </div>
+ 	</div>
+ 	<div class="head3">
+ 		<a href="Index.html"><img src="img/LOGO_DEMACIA-[453-x-111]-.png" class="logo"></a>
+ 		<div class="links2">
+ 		<a href="Index.html">Medicamentos</a>
+ 		<a href="Index.html">Genéricos</a>
+ 		<a href="Index.html">Saúde</a>
+ 		<a href="Index.html">Beleza</a>
+ 		<a href="Index.html">Dermocosméticos</a>
+ 		<a href="Index.html">Infantil</a>
+ 		<a href="Index.html">Promoções</a>
+ 		</div>
+ 	</div>
+</div>
+<div class="content" style="margin-top: 140px; height: 650px; padding-top: 5%">
+<div class="site-section">
+    <form name="myForm" action="index.html" onsubmit="return validateForm()" method="post">
+      <div class="container">
+      <div class="form">
+      <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="txtform">Nome Completo:</h2>
+          <p><input type="text" class="txtbox" style="width: 460px" placeholder="Ex.: Garen Demaciano"></p>
+        </div>
+        <div class="col-lg-3">
+         <h2 class="txtform">Gênero:</h2>
+          <p><select class="slctbox">
+           <option selected="selected">Selecionar gênero</option>
+           <option>Masculino</option>
+           <option>Feminino</option>
+           <option>Outro</option>
+          </select></p>
+        </div>
+        <div class="col-lg-3">
+          <h2 class="txtform">Data de nasc.:</h2>
+          <input type="date" class="slctbox"> 
+        </div>
+      </div>
+      </div>
+      <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <h2 class="txtform">CPF:</h2>
+          <p><input type="number" class="txtbox2" placeholder="Ex.: 000.000.000-00"></p>
+        </div>
+        <div class="col-lg-3">
+          <h2 class="txtform">Telefone:</h2>
+          <p><input type="number" class="txtbox2" placeholder="Ex.: (00)0000-0000"></p>
+        </div>
+        <div class="col-lg-3">
+          <h2 class="txtform">Logradouro:</h2>
+          <p><input type="text" class="txtbox2" placeholder="Ex.: Vila Marcos"></p>
+        </div>
+      <div class="col-lg-3">
+        <h2 class="txtform">CEP:</h2>
+        <p><input type="number" class="txtbox2" placeholder="Ex.: 000000-000"></p>
+      </div>
+      </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <h2 class="txtform">Número:</h2>
+            <p><input type="text" class="txtbox2" placeholder="Ex.: 0000"></p>
+          </div>
+          <div class="col-lg-3">
+            <h2 class="txtform">Bairro:</h2>
+            <p><input type="text" class="txtbox2" placeholder="Ex.: Jardim Belval"></p>
+          </div>
+          <div class="col-lg-3">
+            <h2 class="txtform">Cidade:</h2>
+            <p><input type="text" class="txtbox2" placeholder="Ex.: Barueri"></p>
+          </div>
+          <div class="col-lg-3">
+            <h2 class="txtform">Estado:</h2>
+            <input type="text" class="txtbox2" placeholder="Ex.: São Paulo">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="txtform">Email:</h2>
+            <input type="email" class="txtbox" name="email" id="email" style="width: 460px" placeholder="Ex.: farmaciademacia@gmail.com">
+          </div>
+          <div class="col-lg-3">
+            <h2 class="txtform">Senha:</h2>
+            <p><input type="password" class="txtbox2" placeholder="Digite a senha"></p>
+          </div>
+          <div class="col-lg-3">
+            <h2 class="txtform">Confirme:</h2>
+            <p><input type="password" class="txtbox2" placeholder="Confirme a senha"></p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2"></div>
+            <div class="col-lg-3">
+            <br>
+            <p><input type="submit" value="Registrar-se" class="btnbox" style="width:630px;" onclick="registrar()"></p>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+     </form>
+</div>
+
+</div>
+</body>
+</html>

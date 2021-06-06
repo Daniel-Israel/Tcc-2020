@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Excluir</title>
+  <link rel="icon" type="imgagem/png" href="img/Pilula[20x20].png">
+	<link rel="stylesheet" href="css/Style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+	<link href="css/Estilo.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+	<script type="text/javascript">
+    function verificar(){
+      var x = document.forms["myForm"]["id"].value;
+      if (x == "") {
+      alert("Campos obrigatórios");
+      return false;
+    }else{
+         window.alert("Produto Excluido com Sucesso!");
+      }
+    }
+
+    </script>
+</head>
+<body class="corpo">
+	<div class="head">
+ <div class="head1">
+
+ 	<p class="covid" style="top: 13px">
+ 	Devido aos problemas ocasionados pelo COVID–19 alguns produtos estão sujeitos a disponibilidade de estoque, podendo ocasionar um aumento no tempo de entrega e atendimento do SAC.</p>
+ </div>
+  	<div class="head2">
+ 		<div class="fe">
+ 			Fone: (11) 8765-4321 | Email: farmacia.demacia@gmail.com
+ 		</div>
+ 		<div class="links">
+ 		 <a href="Acesso.html" style="color: #000080">Acesso</a>
+ 		 <a href="Sobre.html">Sobre</a>
+ 		 <a href="Servico.html">Serviços</a>
+ 		 <a href="Index.html"> Página Inicial</a>
+ 		 </div>
+ 	</div>
+ 	<div class="head3">
+ 		<a href="Index.html"><img src="img/LOGO_DEMACIA-[453-x-111]-.png" class="logo"></a>
+ 		<div class="links2">
+ 		<a href="Index.html">Medicamentos</a>
+ 		<a href="Index.html">Genéricos</a>
+ 		<a href="Index.html">Saúde</a>
+ 		<a href="Index.html">Beleza</a>
+ 		<a href="Index.html">Dermocosméticos</a>
+ 		<a href="Index.html">Infantil</a>
+ 		<a href="Index.html">Promoções</a>
+ 		</div>
+ 	</div>
+</div>
+<div class="content" style="margin-top: 140px; height: 650px; padding-top: 5%">
+<div class="site-section">
+    <div style="text-align:center">
+    <a href="RegistrarProduto.html"><input type="submit" value="Registrar" class="btnbox" style="width:20%;" ></a>
+	<a href="ModificarProduto.html"><input type="submit" value="Editar" class="btnbox" style="width:20%;" ></a>
+	<a href="ExcluirProduto.html"><input type="submit" value="Excluir" class="btnbox" style="width:20%;" ></a>
+
+	</div></br>
+  <br>
+  <h1 class="destaque2">Exclua um produto:</h1>
+  <br/>
+  <form name="myForm" method="post" onsubmit="return verificar()">
+      <div class="container">
+      <div class="form">
+      <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="txtform">Nome do produto:</h2>
+          <p><input type="text" class="txtbox" style="width: 460px" placeholder="Ex.: BandAid"></p>
+        </div>
+        <div class="col-lg-3">
+         <h2 class="txtform">Tipo do Produto:</h2>
+          <p><select class="slctbox">
+           <option selected="selected">Selecione</option>
+           <option>Infantil</option>
+           <option>Dermocosméticos</option>
+           <option>Beleza</option>
+		        <option>Alimento</option>
+           <option>Genéricos</option>
+           <option>Medicamentos</option>
+          </select></p>
+        </div>
+        <div class="col-lg-3">
+          <h2 class="txtform">Código do lote:</h2>
+          <p><input type="number" class="txtbox2" placeholder="Ex.: 000-00"></p>
+        </div>
+      </div>
+      </div>
+      <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <h2 class="txtform">ID:</h2>
+          <p><input type="number" class="txtbox2" id="id" name="id" placeholder="Ex.: 000-00"></p>
+        </div>
+        <div class="col-lg-3">
+          <h2 class="txtform">Unidade:</h2>
+          <p><input type="text" class="txtbox2" placeholder="Ex.: Frasco/50ml"></p>
+        </div>
+        <div class="col-lg-3">
+          <h2 class="txtform">Marca:</h2>
+          <p><input type="text" class="txtbox2" placeholder="Ex.: Genéricos"></p>
+        </div>
+      <div class="col-lg-3">
+        <h2 class="txtform">Preço:</h2>
+        <p><input type="number" class="txtbox2" placeholder="Ex.: R$ 40,00"></p>
+      </div>
+      </div>
+      </div>
+      
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2"></div>
+            <div class="col-lg-3">
+            <br>
+            <p><input type="submit" value="Excluir Produto" class="btnbox" style="width:630px;" onclick=""></p>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </form> 
+</div>
+
+</div>
+</body>
+</html>

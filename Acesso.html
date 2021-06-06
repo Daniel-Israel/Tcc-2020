@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Acesso</title>
+  <link rel="icon" type="imgagem/png" href="img/Pilula[20x20].png">
+	<link rel="stylesheet" href="css/Style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+	<link href="css/Estilo.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+</head>
+<script type="text/javascript">
+        function registro()
+        {
+        	alert("Você será redirecionado para a página de registro");
+           window.location.assign("Registro.html");
+        }
+      function validateForm() {
+  		var x = document.forms["myForm"]["senha"].value;
+      var y = document.forms["myForm"]["login"].value;
+  		if (x == "" | y == "") {
+    	alert("Campos obrigatórios");
+    	return false;
+  	}else{
+      if (y == "func" && x == "123"){
+        alert("Você será redirecionado para a página de funcionários");
+        window.location.assign("EscolherAcao.html");
+      }else{
+  	alert("Login concluido");
+     window.location.assign("Index.html");
+    }
+  }
+}
+  function exibir() {
+  var x = document.getElementById("senha");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+    </script>
+<body class="corpo">
+	<div class="head">
+ <div class="head1">
+
+ 	<p class="covid" style="top: 13px">
+ 	Devido aos problemas ocasionados pelo COVID–19 alguns produtos estão sujeitos a disponibilidade de estoque, podendo ocasionar um aumento no tempo de entrega e atendimento do SAC.</p>
+ </div>
+  	<div class="head2">
+ 		<div class="fe">
+ 			Fone: (11) 8765-4321 | Email: farmacia.demacia@gmail.com
+ 		</div>
+ 		<div class="links">
+ 		 <a href="Acesso.html" style="color: #000080">Acesso</a>
+ 		 <a href="Sobre.html">Sobre</a>
+ 		 <a href="Servico.html">Serviços</a>
+ 		 <a href="Index.html"> Página Inicial</a>
+ 		 </div>
+ 	</div>
+ 	<div class="head3">
+ 		<a href="Index.html"><img src="img/LOGO_DEMACIA-[453-x-111]-.png" class="logo"></a>
+ 		<div class="links2">
+ 		<a href="Index.html">Medicamentos</a>
+ 		<a href="Index.html">Genéricos</a>
+ 		<a href="Index.html">Saúde</a>
+ 		<a href="Index.html">Beleza</a>
+ 		<a href="Index.html">Dermocosméticos</a>
+ 		<a href="Index.html">Infantil</a>
+ 		<a href="Index.html">Promoções</a>
+ 		</div>
+ 	</div>
+</div>
+<div class="content" style="margin-top: 140px; height: 700px">
+	
+<div class="site-section" style="padding: 80px">
+    <div class="container" >
+        <div class="row" style="margin-top: 5%"> 
+            <div class="col-lg-5">
+        <h2 class="subtitle">Já tem conta?</h2>
+                <div class="form">
+        <form name="myForm" method="post">
+            <h1 class="txtform">Login:</h1>
+            <p><input type="text" class="txtbox" id="login" name="login" placeholder="Login|Usuário"></p>
+            <h1 class="txtform">Senha:</h1>
+            <p><input type="password" class="txtbox" id="senha" name="senha" placeholder="Senha"></p>
+            <p style="color:black;font-size: 18px; margin-left:5px"><input type="checkbox" id="scales" name="scales" onClick="exibir()"><label for="scales" style="padding-left: 3px"> Mostrar senha</label></p>
+            <p class="btncenter"><input type="button" onclick="validateForm()" class="btnbox" value="Logar"> <input type="reset" class="btnbox" value="Limpar"></p>
+        </form>
+                </div>
+            </div>
+                <div class="col-lg-5 ml-auto">
+        <h2 class="subtitle">Registre-se</h2>
+            <div class="form">
+        <form name="myForm2" action="registro.html" onsubmit="return registro()" method="post">
+            <h1 class="txtform">CPF:</h1>
+            <p><input type="number" maxlength="11" class="txtbox" required="required" placeholder="000.000.000-00"></p>
+            <h1 class="txtform">CEP:</h1>
+            <p><input type="number" class="txtbox" required="required" placeholder="000000-00"></p>
+            <br>
+            <p class="btncenter"><input type="submit" value="Continuar" onclick="" class="btnbox"> <input type="reset" class="btnbox" value="Limpar"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>

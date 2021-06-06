@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fale Conosco</title>
+	<link rel="icon" type="imgagem/png" href="img/Pilula[20x20].png">
+	<link rel="stylesheet" href="css/Style.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+	<script type="text/javascript">
+		function enviar()  {
+  var x = document.forms["myForm"]["email"].value;
+  if (x == "") {
+    alert("Campos obrigatórios");
+    return false;
+  }else{
+				alert("Mensagem enviada com sucesso.");
+		}
+		}
+	</script>
+</head>
+<body class="corpo">
+	<div class="head">
+ <div class="head1">
+
+ 	<p class="covid">
+ 	Devido aos problemas ocasionados pelo COVID–19 alguns produtos estão sujeitos a disponibilidade de estoque, podendo ocasionar um aumento no tempo de entrega e atendimento do SAC.</p>
+ </div>
+  	<div class="head2">
+ 		<div class="fe">
+ 			Fone: (11) 8765-4321 | Email: farmacia.demacia@gmail.com
+ 		</div>
+ 		<div class="links">
+ 		 <a href="Acesso.html">Acesso</a>
+ 		 <a href="Sobre.html">Sobre</a>
+ 		 <a href="Servico.html">Serviços</a>
+ 		 <a href="Index.html"> Página Inicial</a>
+ 		 </div>
+ 	</div>
+ 	<div class="head3">
+ 		<a href="Index.html"><img src="img/LOGO_DEMACIA-[453-x-111]-.png" class="logo"></a>
+ 		<div class="links2">
+ 		<a href="Index.html">Medicamentos</a>
+ 		<a href="Index.html">Genéricos</a>
+ 		<a href="Index.html">Saúde</a>
+ 		<a href="Index.html">Beleza</a>
+ 		<a href="Index.html">Dermocosméticos</a>
+ 		<a href="Index.html">Infantil</a>
+ 		<a href="Index.html">Promoções</a>
+ 		</div>
+ 	</div>
+</div>
+<div class="content" style="height: 700px">
+	<br><br>
+	<p class="destaque1">Fale Conosco</p>
+		<p class="texto" style="text-align: center;">Você pode utilizar este formulário para entrar em contato conosco.</p> 
+		<div class="form" style="width: 600px; font-size: 25px; margin-left: 25%">
+
+			<form name="myForm" action="" onsubmit="return enviar()" method="post">
+
+			<h2 class="txtform" style="font-size: 25px">Nome: <input type="text" class="txtbox" required="required" style="width: 510px; height: 20px" placeholder="Ex.: Garen Demaciano"></h2>
+          	<h2 class="txtform" style="font-size: 25px">E-mail: <input type="email" class="txtbox" name="email" id="email" required="required" style="width: 508px; height: 20px" placeholder="Ex.: farmaciademacia@gmail.com"> </h2>
+			<h2 class="txtform" style="font-size: 25px">Tipo da mensagem: <select class="slctbox" style="width: 377px" >
+			 <option selected="selected">Selecionar tipo</option>
+         	 <option>Problema</option>
+          	 <option>Dúvida</option>
+           	 <option>Reclamação</option>
+           	 <option>Outros</option>
+          </select></h2>
+          <h2 class="txtform" style="font-size: 25px">Mensagem: </h2>
+          <textarea class="txtboxarea" style="height: 80px ;width: 588px"></textarea>
+          <p><input type="submit" value="Enviar" class="btnbox" style="width:600px;" onclick=""></p>
+			</form>
+	</div>
+</div>
+
+</body>
+</html>

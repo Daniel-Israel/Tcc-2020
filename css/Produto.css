@@ -1,0 +1,93 @@
+/* Retângulo */
+
+.produto{
+position: relative;
+width: 180px;
+height: 360px;
+text-align:center;
+
+transition: 0.2s;
+
+
+background: #fafafa;
+box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+
+border-style: solid;
+border-width: 1px;
+border-color:#c0c0c0;
+}
+
+.produto:hover{
+
+	width: 180px;
+	height: 365px;
+
+	border-color: #a3a3a3;
+
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.produtoimg{
+	width: 142px;
+	height: 121px;
+	padding-left: 21px;
+	padding-right: 21px;
+	padding-top: 21px;
+}
+
+.nomeprod{
+	font-weight: 500; 
+	font-size: 16px;
+
+}
+
+.infprod1{
+	font-weight: bold; 
+	font-size: 15px;
+}
+
+.infprod2{
+	font-weight: 400;
+	 font-size: 14px;
+}
+
+.precoprod{
+	font-weight: 400; 
+	font-size: 20px; 
+	color: #3030DC; 
+	text-align:center; 
+	padding-left: 0;
+}
+
+.btncomprar{
+	font-size: 18px;
+	color: #3030DC;
+	transition: 0.05s;
+	height: 35px;
+
+	background: #FFFFFF;
+	border: 2px solid #3030DC;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+
+.btncomprar:hover{
+	border-color:#09099E;
+	color:#09099E;
+	font-weight: 500;
+	height: ;
+	width: 88px;
+	border-radius: 6px;
+
+}
+
+.linkf{
+	text-decoration: none;
+	color:black;
+
+}
+
+.linkf:hover{
+	text-decoration: none;
+	color: #a3a3a3;
+}
